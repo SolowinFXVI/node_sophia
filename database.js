@@ -2,8 +2,9 @@ var mysql = require('mysql');
 var conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'cloud',
-  database: 'db'
+  password: 'sophia',
+  port: '3307',
+  database: 'sophia_db'
 }); 
 conn.connect(function(err) {
   if (err) throw err;
