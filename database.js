@@ -3,7 +3,7 @@ var conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'sophia',
-  port: '3307',
+  port: '3306',
   database: 'sophia_db'
 }); 
 conn.connect(function(err) {

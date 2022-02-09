@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+table{border-collapse:collapse}
+td, th {border: 1px solid #999;padding: 5px;text-align: center;}
+tbody tr:nth-child(odd) {background: #eee;}
+thead{background:#3456;}
