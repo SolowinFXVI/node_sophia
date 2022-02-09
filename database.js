@@ -1,14 +1,12 @@
 var mysql = require('mysql');
-var conn = mysql.createConnection({ // change to actual db logins
-    host : 'localhost',
-    user : 'root',
-    password : 'cloud',
-    database : 'sophia'
+var conn = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'cloud',
+  database: 'db'
+}); 
+conn.connect(function(err) {
+  if (err) throw err;
+  console.log('Database is connected successfully !');
 });
-
-conn.connect(function(err){
-    if (err) throw err;
-    console.log('Database is connected successfully');
-});
-
-module.exports = conn;
+module.exports = conn; 
